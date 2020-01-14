@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wiki</title>
+</head>
+<body>
+	{% for page in pages %}
+            <ul>
+               <li>
+                 <h1><a href="{{ page.get_absolute_url }}">{{page.title}}</a></h1>
+                    </li>
+                    <li>
+                        <p>{{page.last_update}}</p>
+                    </li>
+                </ul>
+            </a>
+    {% endfor %}
+</body>
+</html>
